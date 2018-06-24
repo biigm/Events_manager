@@ -1,0 +1,123 @@
+header {
+  overflow: auto;
+  background-color: rgb(255, 132, 22);
+  padding: 2px;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  a:hover {
+    color: blue;
+  }
+
+
+}
+
+.logo {
+  margin-top: 16px;
+  margin-left: 4px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
+  @media (max-width: 820px) {
+    widh: 40px;
+    height: 40px;
+    margin-top: 12px;
+  }
+}
+
+.mainTitles {
+  float: left;
+  width: 400px;
+  overflow: auto;
+
+  @media (max-width: 820px) {
+    float: none;
+    margin: 0 auto;
+    width: 330px;
+  }
+
+}
+
+h1 {
+  float: left;
+  font-size: 50px;
+  padding: 10px;
+  color: white;
+  display: inline-block;
+
+  span {
+    position: absolute;
+    left: 280px;
+    top: 60px;
+    font-size: 15px;
+
+
+    @media (max-width: 820px) {
+     display: none;
+    }
+  }
+
+  a:hover {
+    color: inherit;
+  }
+
+  @media (max-width: 820px) {
+    float: none;
+    font-size: 40px;
+
+  }
+}
+
+
+nav {
+  float: right;
+  margin-top: 20px;
+  ul {
+    @include clearfix;
+    list-style: none;
+    padding: 3px;
+    margin: 0 auto;
+    text-align: center;
+
+
+    li {
+      color: white;
+      display: inline-block;
+      border: inherit;
+      padding: 8px;
+      margin: 1px 1px;
+      background-color: orangered;
+      transition: 0.3s;
+      border-radius: 4px;
+
+      a:hover {
+        color: inherit;
+      }
+    }
+
+    li:hover {
+      background-color: #fff5b5;
+      color: #85001c;
+    }
+  }
+
+  @media (max-width: 820px) {
+    float: none;
+    margin: 0;
+  }
+
+  .active {
+    background-color: #6f0a0b;
+  }
+}

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato Medium";
+}
+
+body {
+  background-color: rgba(247, 206, 56, 0.1)
+}
+
+@mixin clearfix {
+  &:after,
+  &:before {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.clearFix {
+  @include clearfix;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: auto;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}

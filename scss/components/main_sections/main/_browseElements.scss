@@ -1,0 +1,206 @@
+// @media (max-width: 730px) {
+
+.singleElement {
+  width: 700px;
+  margin: 20px auto;
+  border: 1px solid rgb(232, 186, 62);
+  @include clearfix;
+  background-color: rgba(232, 186, 62, 0.3);
+  box-shadow: 0px 0px 49px -8px rgba(219,172,33,1);
+  transition: background-color 0.25s;
+  cursor: pointer;
+  padding-bottom: 4px;
+  animation: showSlower 2s;
+
+  @media (max-width: 730px) {
+    width:100%;
+  }
+
+ strong {
+   font-weight: 800;
+ }
+
+  img {
+   // margin: -10px;
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+
+
+  }
+
+  .mainElements {
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(232, 186, 62);
+
+  }
+
+  .col1, .col2 {
+    padding-top: 10px;
+    padding-right: 5px;
+    float: left;
+    text-align: center;
+
+  }
+
+  .col1 {
+    width: 50%;
+    @media (max-width: 730px) {
+      width:100%;
+    }
+  }
+
+  .col2 {
+    width: 50%;
+    @media (max-width: 730px) {
+      width:100%;
+    }
+  }
+
+  h2 {
+    margin-bottom: 4px;
+  }
+
+
+}
+
+.singleElement:hover {
+  background-color: rgba(232, 186, 62, 0.6);
+}
+
+.sortPanel {
+  width: 700px;
+  margin: 5px auto;
+
+  border: 1px solid rgb(232, 186, 62);
+  overflow: auto;
+  padding: 7px;
+  padding-left: 15px;
+
+  @media (max-width: 730px) {
+    width:100%;
+    padding-left: 2%;
+  }
+
+  #sortTitle {
+    margin-top: 2px;
+    margin-bottom: -2px;
+    @media (max-width: 730px) {
+      display: none;
+    }
+  }
+
+  .sortCol1, .sortCol2, .sortCol3 {
+    float: left;
+    margin-right: 10px;
+
+    @media (max-width: 730px) {
+      margin-right: 2px;
+    }
+  }
+
+  .sortCol1 {
+    width: 50%;
+    text-align: center;
+  }
+
+  .sortCol2 {
+    padding: 5px;
+    padding-left: 15px;
+    width: 110px;
+    background-color: rgba(232, 186, 62, 0.2);
+    transition: background-color 0.25s;
+    cursor: pointer;
+
+    @media (max-width: 730px) {
+      width: 49%;
+    }
+
+  }
+
+  .sortCol3 {
+    padding: 5px;
+    padding-left: 15px;
+    width: 110px;
+
+    background-color: rgba(232, 186, 62, 0.2);
+    transition: background-color 0.25s;
+    cursor: pointer;
+
+    @media (max-width: 730px) {
+      width: 49%;
+    }
+  }
+
+  .sortCol2:hover, .sortCol3:hover {
+    background-color: orange;
+  }
+
+  .sortUp {
+    display: inline-block;
+    margin-right: 7px;
+    margin-bottom: -5px;
+    float: right;
+    font-size: 20px;
+    font-weight: 1000;
+    color: orangered;
+    width: 15px;
+    transform: rotate(90deg);
+  }
+
+  .sortDown {
+    display: inline-block;
+    margin-right: 7px;
+    margin-top: -4px;
+    margin-bottom: -5px;
+    float: right;
+    font-size: 20px;
+    font-weight: 1000;
+    color: orangered;
+    width: 15px;
+    transform: rotate(-90deg);
+  }
+
+  #searchInevents {
+    float: left;
+    width: 668px;
+    height: 30px;
+    padding-left: 4px;
+
+    @media (max-width: 730px) {
+      width:100%;
+    }
+  }
+
+  #serachIcon {
+    margin-top: -1px;
+    border-radius: 4px;
+
+    float: left;
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/lupa.png');
+    background-size: cover;
+
+    @media (max-width: 730px) {
+      display: none;
+    }
+  }
+}
+
+.noBorder {
+  margin-top: 14px;
+  border: none;
+  padding: 0;
+}
+
+@keyframes showSlower {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

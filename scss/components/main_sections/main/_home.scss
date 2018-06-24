@@ -1,0 +1,136 @@
+@mixin backgroundImages {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  animation: showSlow 10.5s;
+
+}
+
+.pic1 {
+  background-image: url('../images/1.jpg');
+  @include backgroundImages;
+}
+
+.pic2 {
+  background-image: url('../images/2.jpg');
+  @include backgroundImages;
+
+}
+
+.pic3 {
+  background-image: url('../images/3.jpg');
+  @include backgroundImages;
+
+}
+
+.pic4 {
+  background-image: url('../images/4.jpg');
+  @include backgroundImages;
+
+}
+
+.pic5 {
+  background-image: url('../images/5.jpg');
+  @include backgroundImages;
+
+}
+
+.search {
+  border: 1px solid white;
+  padding: 10px;
+  width: 600px;
+  text-align: center;
+  box-shadow: 0px 0px 11px 0px rgba(255,255,255,0.75);
+  animation: showMain 3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: 730px) {
+    width: 90vw;
+  }
+
+  h2 {
+    color: white;
+    margin-top: 8px;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px black;
+  }
+  form {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    display: inline-block;
+    overflow: auto;
+  }
+}
+
+#mainSearch {
+  float: left;
+  width: 400px;
+  height: 30px;
+  padding-left: 3px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  @media (max-width: 730px) {
+    width: 60vw;
+  }
+}
+
+#mainBttnSearch {
+  float: left;
+  display:block;
+  border-radius: 4px;
+
+  width: 31px;
+  height: 31px;
+  transition: background-color 0.3s;
+  background-image: url("../images/lupa.png");
+  background-size: cover;
+  border: 0px solid transparent;
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+#mainBttnSearch:hover {
+  background-color: #b97a00;
+}
+
+@keyframes showSlow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity : 1;
+  }
+}
+
+.blackBackground {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  background-color: black;
+}
