@@ -46,7 +46,7 @@ My development environment is based on Webpack. My configuration allows to:
 *   use newest ECMAScript functionality without the risk of not supporting older browsers (babel loader),
 *   process sass code to css format,
 *   test project with dev-server which allowed me to see instant changes in page after saving the file,
-*   build the whole page in build folder which is ready to deploy on the server.
+*   build the whole page in separate folder which is ready to deploy on the server.
 
 ## Sass
 
@@ -65,5 +65,23 @@ functionality).
 
 Google geolocation service was used to calculate the distance between user and the event.
 
+## RWD
+
+Page is fully responsive, there should be no troubles in accessing it on any device. Media queries in css changes
+page layout accordingly to the device viewport size. 
  
+ # Remarks
  
+ Site is still in development process. Few bugs can be encountered:
+ *  geolocation asks for permission - only after site reload the distance of events is calculated correctly,
+ *  when user tries to add location to the new place - it's sometimes necessary to click twice on the suggestion from
+ google autocomplete feature for mark to appear on the map,
+ *  after deleting the event, automatic redirection accurs. In github pages page not found (404) sometimes occurs.
+ 
+ ## Future uptades
+ 
+ I'm going to develop few more functions for this project:
+ *  Login functionality - I'm going to use Firebase authentication option to allow users to log in by facebook/google account.
+ Every user can add, modify and delete only his events.
+ *  Image hosting service - I want to use external API to create easy image hosting (Imgur/Firebase data storage). User 
+ could import a picture from the browsing device to the events.
