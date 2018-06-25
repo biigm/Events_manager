@@ -6,7 +6,7 @@ module.exports = {
     entry: "./js/app.jsx",
     output: {
         filename: "./js/out.js",
-        path: path.resolve(__dirname, "build"),
+        path: path.resolve(__dirname, "docs"),
     },
     mode: 'development',
     module: {

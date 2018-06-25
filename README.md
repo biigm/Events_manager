@@ -1,5 +1,6 @@
 # Events_manager
-This app is a tool used to browse and manage events happening anywhere/anytime.
+Events-manager is a tool used to browse and manage events happening anywhere/anytime. You can access this app directly
+thanks to github pages here: https://biigm.github.io/events_manager/
 
 # General description
 
