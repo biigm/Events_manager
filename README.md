@@ -25,9 +25,9 @@ clicked to redirect to the event full description site.
 When user is on the specific event site, there is option to edit event - all data can be rewritten. The second option is
 to delete event.
 
+![](images/page3.png)
 ![](images/page1.png)
 ![](images/page2.png)
-![](images/page3.png)
 
 # Purpose and technology
 
