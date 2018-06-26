@@ -1,6 +1,6 @@
 # Events_manager
 Events-manager is a tool used to browse and manage events happening anywhere/anytime. You can access this app directly
-thanks to github pages here: https://biigm.github.io/events_manager/
+thanks to github pages here: https://kamilpszczolkowski.github.io/events_manager/
 
 # General description
 
@@ -75,7 +75,7 @@ page layout accordingly to the device viewport size.
  Site is still in development process. Few bugs can be encountered:
  *  geolocation asks for permission - only after site reload the distance of events is calculated correctly,
  *  when user tries to add location to the new place - it's sometimes necessary to click twice on the suggestion from
- google autocomplete feature for mark to appear on the map,
+ google autocomplete feature for marker to appear on the map,
  *  after deleting the event, automatic redirection accurs. In github pages page not found (404) sometimes occurs.
  
  ## Future uptades
