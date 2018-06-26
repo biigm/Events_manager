@@ -25,6 +25,10 @@ clicked to redirect to the event full description site.
 When user is on the specific event site, there is option to edit event - all data can be rewritten. The second option is
 to delete event.
 
+![](images/page1.png)
+![](images/page2.png)
+![](images/page3.png)
+
 # Purpose and technology
 
 ## JavaScript React
@@ -69,6 +73,21 @@ Google geolocation service was used to calculate the distance between user and t
 
 Page is fully responsive, there should be no troubles in accessing it on any device. Media queries in css changes
 page layout accordingly to the device viewport size. 
+
+ # Installation
+ 
+If you want to run/develop the code, you need to recreate the development environment based on package.json file - you 
+need to install the components listed in there (by using npm install in bash console in project folder). To run the site
+you need to compile jsx files into out.js - it can be done in one of two ways:
+
+*   use dev-server - use command "npm run start" in bash console, it will start the server locally with preprocessed jsx and
+sass code. You need to use style-loader in webpack.config.js, because MiniCSS.loader doesn't support HMR. Sipmly comment
+the line in weback.config.js which calls MiniCSS.loader and uncomment the line calling 'style-loader' - styles will be loaded
+in styles html tag in head of index.html,
+*   build the site - use command "npm run build" in bash console. The entire site will be built in docs folder. If you use
+that option you need to use MiniCSS.loader in webpack.config.js - it will create seprate file with processed css code and
+import it in index.html.
+ 
  
  # Remarks
  
