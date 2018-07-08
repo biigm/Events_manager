@@ -1,9 +1,9 @@
 import React from 'react';
 
 class Footer extends React.Component {
-    render(){
+    render() {
         let mainStyle = {};
-        if(this.props.mainSite){
+        if (this.props.mainSite) {
             mainStyle = {
                 position: "fixed",
                 bottom: "0",
@@ -17,10 +17,15 @@ class Footer extends React.Component {
                     <strong className="footerTitle">Kamil Pszczółkowski @2018</strong>
                     <span className="footerInfo">Aplikacja do zarządzania wydarzeniami </span>
                     <div className="buttons">
-                        <div className='btn1'></div>
-                        <div className='btn2'></div>
-                        <div className='btn3'></div>
-                        <div className='btn4'></div>
+                        <a href="https://www.linkedin.com/in/kamil-pszcz%C3%B3%C5%82kowski-9b9894166/">
+                            <div className='btn2'></div>
+                        </a>
+                        <a href="mailto:pszczolkowski.kamil@gmail.com">
+                            <div className='btn3'></div>
+                        </a>
+                        <a href="https://github.com/kamilpszczolkowski">
+                            <div className='btn4'></div>
+                        </a>
                     </div>
                 </div>
             </footer>

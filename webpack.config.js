@@ -8,7 +8,7 @@ module.exports = {
         filename: "./js/out.js",
         path: path.resolve(__dirname, "docs"),
     },
-    mode: 'development',
+    mode: 'production',
     module: {
         rules: [
             {
@@ -32,8 +32,8 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                 //    MiniCSS.loader,
-                    'style-loader',
+                     MiniCSS.loader,
+                  //  'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
