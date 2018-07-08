@@ -33,7 +33,7 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                      MiniCSS.loader,
-               //     'style-loader',
+                 //   'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',

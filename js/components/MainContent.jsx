@@ -12,7 +12,7 @@ class MainContent extends React.Component {
 
     render(){
         return (
-            <Template>
+            <Template mainSite={true}>
                 <SearchField/>
                 <Mainbackground/>
             </Template>

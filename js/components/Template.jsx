@@ -13,7 +13,7 @@ class Template extends React.Component {
                         {this.props.children}
                     </div>
                 </main>
-                <Footer/>
+                <Footer mainSite={this.props.mainSite}/>
             </div>
         )
     }

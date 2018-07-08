@@ -2,8 +2,16 @@ import React from 'react';
 
 class Footer extends React.Component {
     render(){
+        let mainStyle = {};
+        if(this.props.mainSite){
+            mainStyle = {
+                position: "fixed",
+                bottom: "0",
+                width: "100%"
+            };
+        }
         return (
-            <footer>
+            <footer style={mainStyle}>
                 <div className="container">
 
                     <strong className="footerTitle">Kamil Pszczółkowski @2018</strong>
