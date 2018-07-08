@@ -96,7 +96,7 @@ import it in index.html.
  *  when user tries to add location to the new place - it's sometimes necessary to click twice on the suggestion from
  google autocomplete feature for marker to appear on the map,
  *  after deleting the event, automatic redirection accurs. In github pages page not found (404) sometimes occurs.
- 
+ *  events modification feature is working, but still in developmnet (that's why warnings shows in the console when modifying event)
  ## Future uptades
  
  I'm going to develop few more functions for this project:

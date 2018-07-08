@@ -42,6 +42,7 @@ class MainBackground extends React.Component {
 
     componentWillUnmount() {
         clearInterval(this.interval);
+        clearTimeout(this.timeout);
     }
 
     render() {
