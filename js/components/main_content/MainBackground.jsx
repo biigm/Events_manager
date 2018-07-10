@@ -10,6 +10,18 @@ class MainBackground extends React.Component {
     }
 
     componentDidMount() {
+        //Preloading Images
+        let img1 = new Image();
+        img1.src = 'images/1.jpg';
+        let img2 = new Image();
+        img2.src = 'images/2.jpg';
+        let img3 = new Image();
+        img3.src = 'images/3.jpg';
+        let img4 = new Image();
+        img4.src = 'images/4.jpg';
+        let img5 = new Image();
+        img5.src = 'images/5.jpg';
+
         let countIter = 0;
         this.timeout = setTimeout( ()=> {
             this.setState({
