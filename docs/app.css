@@ -15,7 +15,7 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
   position: relative; }
 
 a {
@@ -47,19 +47,18 @@ header {
   background-repeat: no-repeat; }
   @media (max-width: 820px) {
     .logo {
-      widh: 40px;
+      width: 40px;
       height: 40px;
       margin-top: 12px; } }
 
 .mainTitles {
   float: left;
-  width: 400px;
   overflow: auto; }
   @media (max-width: 820px) {
     .mainTitles {
       float: none;
       margin: 0 auto;
-      width: 330px; } }
+      width: 340px; } }
 
 h1 {
   float: left;
@@ -116,7 +115,7 @@ nav {
     background-color: #6f0a0b; }
 
 main .container {
-  min-height: 80vh; }
+  min-height: 77vh; }
 
 footer {
   background-color: rgba(255, 132, 22, 0.8);
@@ -465,7 +464,7 @@ footer {
 
 label {
   margin: 5px 0;
-  width: 100%;
+  width: 99%;
   float: left;
   clear: left; }
   label input {
