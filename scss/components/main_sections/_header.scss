@@ -30,7 +30,7 @@ header {
 
 
   @media (max-width: 820px) {
-    widh: 40px;
+    width: 40px;
     height: 40px;
     margin-top: 12px;
   }
@@ -38,13 +38,13 @@ header {
 
 .mainTitles {
   float: left;
-  width: 400px;
+ // width: 400px;
   overflow: auto;
 
   @media (max-width: 820px) {
     float: none;
     margin: 0 auto;
-    width: 330px;
+    width: 340px;
   }
 
 }
