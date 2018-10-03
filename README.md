@@ -1,6 +1,8 @@
 # Events_manager
 Events-manager is a tool used to browse and manage events happening anywhere/anytime. You can access this app directly
 thanks to github pages here: https://kamilpszczolkowski.github.io/events_manager/
+Update: this is outdated version - I created new repository with this app build with React-Redux. Go to the link below to see it:
+https://github.com/kamilpszczolkowski/events-manager-react-redux
 
 # General description
 
